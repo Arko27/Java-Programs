@@ -1,0 +1,193 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 98566144 bytes for Failed to commit area from 0x00000000a2000000 to 0x00000000a7e00000 of length 98566144.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (t:/workspace/open/src/hotspot/os/windows/os_windows.cpp:3269), pid=1028, tid=9696
+#
+# JRE version:  (11.0.2+9) (build )
+# Java VM: OpenJDK 64-Bit Server VM (11.0.2+9, mixed mode, aot, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -ea -agentlib:jdwp=transport=dt_shmem,address=javadebug -Dfile.encoding=UTF-8 bluej.runtime.ExecServer UTF-8
+
+Host: Intel(R) Pentium(R) CPU G3240 @ 3.10GHz, 2 cores, 5G,  Windows 10 , 64 bit Build 19041 (10.0.19041.3636)
+Time: Sat Dec 16 17:34:40 2023 India Standard Time elapsed time: 0 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000025460703000):  JavaThread "Unknown thread" [_thread_in_vm, id=9696, stack(0x000000e03c000000,0x000000e03c100000)]
+
+Stack: [0x000000e03c000000,0x000000e03c100000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x63489a]
+V  [jvm.dll+0x771f9f]
+V  [jvm.dll+0x773648]
+V  [jvm.dll+0x773d03]
+V  [jvm.dll+0x25eba8]
+V  [jvm.dll+0x631d3a]
+V  [jvm.dll+0x626775]
+V  [jvm.dll+0x313ffc]
+V  [jvm.dll+0x313e82]
+V  [jvm.dll+0x3196e6]
+V  [jvm.dll+0x36579f]
+V  [jvm.dll+0x3651c0]
+V  [jvm.dll+0x2f0ff8]
+V  [jvm.dll+0x2f2156]
+V  [jvm.dll+0x74b4f7]
+V  [jvm.dll+0x74cc3f]
+V  [jvm.dll+0x372609]
+V  [jvm.dll+0x731b69]
+V  [jvm.dll+0x3e1bad]
+V  [jvm.dll+0x3e3e81]
+C  [java.exe+0x3607]
+C  [java.exe+0x1746c]
+C  [KERNEL32.DLL+0x17344]
+C  [ntdll.dll+0x526b1]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000002545ecd0430, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x000002546071b000 GCTaskThread "GC Thread#0" [stack: 0x000000e03c200000,0x000000e03c300000] [id=9516]
+  0x0000025460740800 ConcurrentGCThread "G1 Main Marker" [stack: 0x000000e03c300000,0x000000e03c400000] [id=9208]
+  0x0000025460742000 ConcurrentGCThread "G1 Conc#0" [stack: 0x000000e03c400000,0x000000e03c500000] [id=11220]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffd57b2f5b7]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x0000025460701f50] Heap_lock - owner thread: 0x0000025460703000
+
+Heap address: 0x00000000a2000000, size: 1504 MB, Compressed Oops mode: Non-zero based: 0x00000000a2000000
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff7e9d80000 - 0x00007ff7e9dc5000 	D:\BlueJava\jdk\bin\java.exe
+0x00007ffd8e4b0000 - 0x00007ffd8e6a8000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffd8c730000 - 0x00007ffd8c7ed000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffd8bde0000 - 0x00007ffd8c0d6000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffd8de00000 - 0x00007ffd8df9e000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffd8c210000 - 0x00007ffd8c232000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffd8c6f0000 - 0x00007ffd8c71c000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffd8c240000 - 0x00007ffd8c35a000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffd8c0e0000 - 0x00007ffd8c17d000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffd8bbc0000 - 0x00007ffd8bcc0000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffd75a40000 - 0x00007ffd75cda000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3636_none_60b6a03d71f818d5\COMCTL32.dll
+0x00007ffd8d6c0000 - 0x00007ffd8d75e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffd8c7f0000 - 0x00007ffd8c820000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffd799b0000 - 0x00007ffd799c6000 	D:\BlueJava\jdk\bin\vcruntime140.dll
+0x00007ffd7c990000 - 0x00007ffd7ca3a000 	D:\BlueJava\jdk\bin\msvcp140.dll
+0x00007ffd57830000 - 0x00007ffd58353000 	D:\BlueJava\jdk\bin\server\jvm.dll
+0x00007ffd8cdc0000 - 0x00007ffd8ce6f000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffd8cb30000 - 0x00007ffd8cbcc000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffd8c5c0000 - 0x00007ffd8c6e6000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffd8c720000 - 0x00007ffd8c728000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffd86f60000 - 0x00007ffd86f69000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffd8cac0000 - 0x00007ffd8cb2b000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffd7f160000 - 0x00007ffd7f187000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffd82d00000 - 0x00007ffd82d0a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffd89990000 - 0x00007ffd899a2000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffd78400000 - 0x00007ffd78411000 	D:\BlueJava\jdk\bin\verify.dll
+0x00007ffd856e0000 - 0x00007ffd858c4000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffd859e0000 - 0x00007ffd85a14000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffd8c180000 - 0x00007ffd8c202000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffd76ae0000 - 0x00007ffd76b08000 	D:\BlueJava\jdk\bin\java.dll
+0x00007ffd7dbc0000 - 0x00007ffd7dbf7000 	D:\BlueJava\jdk\bin\jdwp.dll
+0x00007ffd78100000 - 0x00007ffd78116000 	D:\BlueJava\jdk\bin\zip.dll
+0x00007ffd80910000 - 0x00007ffd8091a000 	D:\BlueJava\jdk\bin\jimage.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;D:\BlueJava\jdk\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.3636_none_60b6a03d71f818d5;D:\BlueJava\jdk\bin\server
+
+VM Arguments:
+jvm_args: -ea -agentlib:jdwp=transport=dt_shmem,address=javadebug -Dfile.encoding=UTF-8 
+java_command: bluej.runtime.ExecServer UTF-8
+java_class_path (initial): D:\BlueJava\lib\bluejcore.jar;D:\BlueJava\lib\junit-4.12.jar;D:\BlueJava\lib\junit-jupiter-5.5.2.jar;D:\BlueJava\lib\junit-jupiter-api-5.5.2.jar;D:\BlueJava\lib\junit-jupiter-engine-5.5.2.jar;D:\BlueJava\lib\junit-jupiter-migrationsupport-5.5.2.jar;D:\BlueJava\lib\junit-jupiter-params-5.5.2.jar;D:\BlueJava\lib\junit-platform-commons-1.5.2.jar;D:\BlueJava\lib\junit-platform-console-1.5.2.jar;D:\BlueJava\lib\junit-platform-console-standalone-1.5.2.jar;D:\BlueJava\lib\junit-platform-engine-1.5.2.jar;D:\BlueJava\lib\junit-platform-launcher-1.5.2.jar;D:\BlueJava\lib\junit-platform-reporting-1.5.2.jar;D:\BlueJava\lib\junit-platform-runner-1.5.2.jar;D:\BlueJava\lib\junit-platform-suite-api-1.5.2.jar;D:\BlueJava\lib\junit-platform-testkit-1.5.2.jar;D:\BlueJava\lib\junit-quickcheck-core-0.9.jar;D:\BlueJava\lib\junit-vintage-engine-5.5.2.jar;D:\BlueJava\lib\hamcrest-core-1.3.jar;D:\BlueJava\lib\hamcrest-library-1.3.jar;D:\BlueJava\lib\lang-stride.jar;D:\BlueJava\lib\javafx\lib\javafx.base.jar;D:\BlueJava\lib\javafx\lib\javafx.controls.jar;D:\BlueJava\lib\javafx\lib\javafx.fxml.jar;D:\BlueJava\lib\javafx\lib\javafx.graphics.jar;D:\BlueJava\lib\javafx\lib\javafx.media.jar;D:\BlueJava\lib\javafx\lib\javafx.properties.jar;D:\BlueJava\lib\javafx\lib\javafx.swing.jar;D:\BlueJava\lib\javafx\lib\javafx.web.jar;D:\BlueJava\lib\javafx\lib\javafx.base.jar;D:\BlueJava\lib\javafx\lib\javafx.controls.jar;D:\BlueJava\lib\javafx\lib\javafx.fxml.jar;D:\BlueJava\lib\javafx\lib\javafx.graphics.jar;D:\BlueJava\lib\javafx\lib\javafx.media.jar;D:\BlueJava\lib\javafx\lib\javafx.properties.jar;D:\BlueJava\lib\javafx\lib\javafx.swing.jar;D:\BlueJava\lib\javafx\lib\javafx.web.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 2                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 1                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 2                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 98566144                                  {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 1577058304                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5824844                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122916698                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122916698                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-18
+PATH=C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\runtime\win64;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\bin;C:\Program Files\MATLAB\MATLAB Production Server\R2015a\polyspace\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;D:\Program Files\Node\;C:\Users\user\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\user\AppData\Local\Programs\Python\Python39\;C:\Users\user\AppData\Local\Microsoft\WindowsApps;;D:\Program Files\Microsoft VS Code\bin;C:\Users\user\AppData\Roaming\npm
+USERNAME=user
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 19041 (10.0.19041.3636)
+
+CPU:total 2 (initial active 2) (2 cores per cpu, 1 threads per core) family 6 model 60 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, clmul, erms, lzcnt, tsc, tscinvbit
+
+Memory: 4k page, system-wide physical 6014M (700M free)
+TotalPageFile size 8062M (AvailPageFile size 355M)
+current process WorkingSet (physical memory assigned to process): 10M, peak: 10M
+current process commit charge ("private bytes"): 47M, peak: 141M
+
+vm_info: OpenJDK 64-Bit Server VM (11.0.2+9) for windows-amd64 JRE (11.0.2+9), built on Jan 18 2019 05:23:22 by "mach5one" with MS VC++ 15.5 (VS2017)
+
+END.

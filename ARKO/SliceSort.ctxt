@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=SliceSort
+comment1.params=a\ m\ b\ n
+comment1.target=void\ mergeArrays(int[],\ int,\ int[],\ int)
+comment2.params=a\ n
+comment2.target=void\ sortArray(int[],\ int)
+comment3.params=arr\ start\ end
+comment3.target=int[]\ sliceArray(int[],\ int,\ int)
+comment4.params=args
+comment4.target=void\ main(java.lang.String[])
+numComments=5

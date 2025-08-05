@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Vampire_No
+comment1.params=x1
+comment1.target=int\ dig(int)
+comment2.params=x2
+comment2.target=int\ composite(int)
+comment3.params=
+comment3.target=void\ main()
+numComments=4
