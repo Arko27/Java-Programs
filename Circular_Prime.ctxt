@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Circular_Prime
+comment1.params=n
+comment1.target=int\ prime(int)
+comment2.params=n
+comment2.target=int\ circulate(int)
+comment3.params=n
+comment3.target=void\ isCircularPrime(int)
+comment4.params=
+comment4.target=void\ main()
+numComments=5
