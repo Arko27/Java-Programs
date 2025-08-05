@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=RightLeft_CircularShift
-comment1.params=a\ n
-comment1.target=void\ right_shift(int[],\ int)
-comment2.params=a\ n
-comment2.target=void\ left_shift(int[],\ int)
-comment3.params=args
-comment3.target=void\ main(java.lang.String[])
-numComments=4

@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=Encryption
-comment1.params=a
-comment1.target=char\ small(char)
-comment2.params=b
-comment2.target=char\ capital(char)
-comment3.params=args
-comment3.target=void\ main(java.lang.String[])
-numComments=4

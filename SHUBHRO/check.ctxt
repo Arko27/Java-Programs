@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=check
-comment1.params=n
-comment1.target=int\ checkPrime(int)
-comment2.params=n
-comment2.target=int\ checkPalindrome(int)
-comment3.params=args
-comment3.target=void\ main(java.lang.String[])
-numComments=4
