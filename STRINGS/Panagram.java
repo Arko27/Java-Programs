@@ -1,19 +1,19 @@
 
 /**
- * Write a description of class CLASS_XII here.
+ * Write a description of class Panagram here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class CLASS_XII
+public class Panagram
 {
     // instance variables - replace the example below with your own
     private int x;
 
     /**
-     * Constructor for objects of class CLASS_XII
+     * Constructor for objects of class Panagram
      */
-    public CLASS_XII()
+    public Panagram()
     {
         // initialise instance variables
         x = 0;

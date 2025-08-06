@@ -1,19 +1,19 @@
 
 /**
- * Write a description of class CLASS_XI here.
+ * Write a description of class Hamming_Number here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class CLASS_XI
+public class Hamming_Number
 {
     // instance variables - replace the example below with your own
     private int x;
 
     /**
-     * Constructor for objects of class CLASS_XI
+     * Constructor for objects of class Hamming_Number
      */
-    public CLASS_XI()
+    public Hamming_Number()
     {
         // initialise instance variables
         x = 0;

@@ -1,19 +1,19 @@
 
 /**
- * Write a description of class Class_XI_Project here.
+ * Write a description of class Keypad_String here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Class_XI_Project
+public class Keypad_String
 {
     // instance variables - replace the example below with your own
     private int x;
 
     /**
-     * Constructor for objects of class Class_XI_Project
+     * Constructor for objects of class Keypad_String
      */
-    public Class_XI_Project()
+    public Keypad_String()
     {
         // initialise instance variables
         x = 0;

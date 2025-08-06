@@ -1,19 +1,19 @@
 
 /**
- * Write a description of class Project here.
+ * Write a description of class Common_Words here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Project
+public class Common_Words
 {
     // instance variables - replace the example below with your own
     private int x;
 
     /**
-     * Constructor for objects of class Project
+     * Constructor for objects of class Common_Words
      */
-    public Project()
+    public Common_Words()
     {
         // initialise instance variables
         x = 0;
