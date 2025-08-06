@@ -1,72 +1,54 @@
 import java.util.*;
-class Array
-{
-    public static void sortArray(int arr[])
-    {
+
+public class Display_Sort_Array {
+    public static void sortArray(int arr[]) {
         int n = arr.length;
-        for (int i = 0; i < n - 1; i++)
-        {
-            for (int j = 0; j < n - i - 1; j++)
-            {
-                if (arr[j] > arr[j + 1])
-                {
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
                     int t = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = t;
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = t;
                 }
-            } 
+            }
         }
     }
-    
-    public static void main(String args[])
-    {
+
+    public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the value of N: ");
         int n = sc.nextInt();
-        
-        if (n <= 2 || n >= 10)
-        {
+
+        if (n <= 2 || n >= 10) {
             System.out.println("Matrix Size out of Range");
             return;
         }
-        
+
         int a[] = new int[n];
         int b[][] = new int[n][n];
-        
+
         System.out.println("Enter the Elements of the Single Dimensional Array:");
         for (int i = 0; i < n; i++)
-        {
             a[i] = sc.nextInt();
-        }
-        
+
         sortArray(a);
         System.out.println("The Sorted Array is :");
         for (int i = 0; i < n; i++)
-        {
             System.out.print(a[i] + "\t");
-        }
-        
-        for (int i = n - 1, r = 0; i >= 0; i--, r++)
-        {
+
+        for (int i = n - 1, r = 0; i >= 0; i--, r++) {
             for (int j = 0; j <= i; j++)
-            {
                 b[r][j] = a[j];
-            }
-            
+
             for (int k = n - 1; k > i; k--)
-            {
                 b[r][k] = a[k - i - 1];
-            }
         }
-        
+
         System.out.println();
         System.out.println("The Filled Matrix is :");
-        for (int i = 0; i < n; i++)
-        {
+        for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++)
-            {
                 System.out.print(b[i][j] + "\t");
-            }
             System.out.println();
         }
     }
