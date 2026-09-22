@@ -20,44 +20,6 @@ This repository is intended for learning, practice, revision, and interview prep
 🕸️ Graphs
 ⚡ Algorithms & Problem Solving
 🧩 Miscellaneous DSA Problems
-📁 Repository Structure
-Java-DSA/
-│
-├── Arrays/
-│   ├── FindLargest.java
-│   ├── FindSmallest.java
-│   ├── ReverseArray.java
-│   └── ...
-│
-├── Numbers/
-│   ├── PrimeNumber.java
-│   ├── PalindromeNumber.java
-│   ├── ArmstrongNumber.java
-│   └── ...
-│
-├── Strings/
-│   ├── ReverseString.java
-│   ├── PalindromeString.java
-│   └── ...
-│
-├── Searching/
-│   ├── LinearSearch.java
-│   ├── BinarySearch.java
-│   └── ...
-│
-├── Sorting/
-│   ├── BubbleSort.java
-│   ├── SelectionSort.java
-│   ├── InsertionSort.java
-│   └── ...
-│
-├── Recursion/
-│   └── ...
-│
-└── README.md
-
-
-The folder structure may change as more programs and topics are added.
 
 🎯 Purpose
 
@@ -65,17 +27,12 @@ The main goal of this repository is to build a strong foundation in Java program
 
 It can be useful for:
 
-Java beginners
-DSA learners
-College students
-Coding practice
-Technical interview preparation
-Quick revision before exams or interviews
-☕ Language
-
-All programs in this repository are written in:
-
-Java
+Java Beginners
+DSA Learners
+College Students
+Coding Practice
+Technical Interview Preparation
+Quick Revision before Exams or Interviews
 
 🚀 How to Run
 
@@ -143,6 +100,7 @@ Stacks & Queues
 Trees
 Graphs
 Advanced DSA Problems
+
 🤝 Contributing
 
 Contributions and improvements are welcome.
@@ -154,6 +112,7 @@ Write clean and readable Java code.
 Use meaningful class and variable names.
 Add comments where necessary.
 Test the program before submitting a pull request.
+
 ⭐ Support
 
 If you find this repository useful for learning Java and DSA, consider giving it a star ⭐.
