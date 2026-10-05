@@ -1,33 +1,35 @@
+import java.util.Scanner;
 
-/**
- * Write a description of class Hamming_Number here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
-public class Hamming_Number
-{
-    // instance variables - replace the example below with your own
-    private int x;
+public class Hamming_Number {
 
-    /**
-     * Constructor for objects of class Hamming_Number
-     */
-    public Hamming_Number()
-    {
-        // initialise instance variables
-        x = 0;
+    public static boolean isHamming(int n) {
+        if (n == 1)
+            return true;
+
+        while (n % 2 == 0)
+            n /= 2;
+        while (n % 3 == 0)
+            n /= 3;
+        while (n % 5 == 0)
+            n /= 5;
+
+        return n == 1;
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a positive integer: ");
+        int num = sc.nextInt();
+
+        if (num <= 0) {
+            System.out.println("INVALID INPUT. Please enter a positive integer.");
+        } else {
+
+            if (isHamming(num)) {
+                System.out.println(num + " is a Hamming Number");
+            } else {
+                System.out.println(num + " is not a Hamming Number");
+            }
+        }
     }
 }
