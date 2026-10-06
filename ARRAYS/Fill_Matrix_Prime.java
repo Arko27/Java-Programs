@@ -11,9 +11,10 @@ public class Fill_Matrix_Prime {
     }
 
     public static void main(String args[]) {
+
         Scanner sc = new Scanner(System.in);
         Fill_Matrix_Prime obj = new Fill_Matrix_Prime();
-        System.out.println("Enter the value of n to make the matrix:");
+        System.out.println("Enter the size of the Matrix:");
         int n = sc.nextInt();
         int a[][] = new int[n][n];
         int c = 0, i = 0, j = 0;

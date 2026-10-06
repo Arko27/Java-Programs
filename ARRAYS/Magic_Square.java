@@ -3,7 +3,7 @@ import java.util.*;
 public class Magic_Square {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the dimension of magical square: ");
+        System.out.println("Enter the dimension of Magic Square: ");
         int n, c, r = 1, num;
         n = sc.nextInt();
         int arr[][] = new int[n][n];

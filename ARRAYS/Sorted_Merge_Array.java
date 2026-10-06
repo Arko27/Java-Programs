@@ -1,23 +1,24 @@
 import java.util.*;
 
-public class Merge_Array {
+public class Sorted_Merge_Array {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         int m, n, i, j, k = 0, s, tmp;
-        System.out.println("Enter the size of first Array");
+        System.out.println("Enter the size of First Array");
         m = sc.nextInt();
-        System.out.println("Enter the size of second Array");
+        System.out.println("Enter the size of Second Array");
         n = sc.nextInt();
         int a[] = new int[m];
         int b[] = new int[n];
         s = m + n;
         int c[] = new int[s];
 
-        System.out.println("Enter the datas for first Array:");
+        System.out.println("Enter elements in the First Array:");
         for (i = 0; i < m; i++) {
             a[i] = sc.nextInt();
         }
-        System.out.println("Enter the datas for second Array:");
+        System.out.println("Enter elements in the Second Array:");
         for (i = 0; i < n; i++) {
             b[i] = sc.nextInt();
         }
@@ -45,7 +46,7 @@ public class Merge_Array {
             }
         }
 
-        System.out.println("\nThe Sorted Array is:");
+        System.out.println("\nThe Sorted Merge Array is:");
         for (i = 0; i < s; i++) {
             System.out.print(c[i] + " ");
         }

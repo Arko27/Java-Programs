@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Alpha_Bubble_Sort {
+public class Bubble_Sort_Alpha {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size of the array");
@@ -22,7 +22,7 @@ public class Alpha_Bubble_Sort {
                 }
             }
         }
-        System.out.println("The sorted array is");
+        System.out.println("The alphabetically sorted array is:");
         for (i = 0; i < n; i++)
             System.out.println(a[i]);
     }

@@ -1,5 +1,6 @@
+import java.util.*;
+
 public class Determinant_Matrix {
-    static final int N = 4;
 
     static void getCofactor(int mat[][], int temp[][], int p, int q, int n) {
         int i = 0, j = 0;
@@ -20,7 +21,7 @@ public class Determinant_Matrix {
         int D = 0;
         if (n == 1)
             return mat[0][0];
-        int temp[][] = new int[N][N];
+        int temp[][] = new int[n][n];
         int sign = 1;
         for (int f = 0; f < n; f++) {
             getCofactor(mat, temp, 0, f, n);
@@ -39,7 +40,19 @@ public class Determinant_Matrix {
     }
 
     public static void main(String[] args) {
-        int mat[][] = { { 1, 0, 2, -1 }, { 3, 0, 0, 5 }, { 2, 1, 4, -3 }, { 1, 0, 5, 0 } };
-        System.out.print("Determinant " + "of the matrix is : " + determinantOfMatrix(mat, N));
+
+        Scanner sc = new Scanner(System.in);
+        int i, j;
+        System.out.println("Enter the size of the matrix:");
+        int n = sc.nextInt();
+        int mat[][] = new int[n][n];
+        System.out.println("Enter the Elements of the Matrix: ");
+        for (i = 0; i < n; i++) {
+            for (j = 0; j < n; j++) {
+                mat[i][j] = sc.nextInt();
+            }
+        }
+
+        System.out.print("Determinant " + "of the matrix is : " + determinantOfMatrix(mat, n));
     }
 }

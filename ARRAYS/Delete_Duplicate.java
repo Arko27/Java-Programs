@@ -13,11 +13,11 @@ public class Delete_Duplicate {
         int c[] = new int[size];
         int i, j, x;
 
-        System.out.println("The elements of the first array is");
+        System.out.println("Enter the elements of the first array:");
         for (i = 0; i < p; i++)
             a[i] = sc.nextInt();
 
-        System.out.println("The elements of the second array is");
+        System.out.println("Enter the elements of the second array:");
         for (i = 0; i < q; i++)
             b[i] = sc.nextInt();
         for (i = 0; i < p; i++)
@@ -38,7 +38,7 @@ public class Delete_Duplicate {
                 }
             }
         }
-        System.out.println("The new array by deleting the duplicate elements is");
+        System.out.println("The new array by deleting the duplicate elements is:");
         for (i = 0; i < size; i++) {
             System.out.println(c[i]);
         }

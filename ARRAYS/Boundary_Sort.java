@@ -2,6 +2,7 @@ import java.util.*;
 
 public class Boundary_Sort {
     public static void main(String args[]) {
+
         int m, n = 0, pos = 0, temp = 0, sum = 0, i, j;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size of the matrix:");
@@ -9,7 +10,7 @@ public class Boundary_Sort {
         int ar[][] = new int[m][m];
         n = (m + m - 2) * 2;
         int t[] = new int[n];
-        System.out.println("Enter the array elements:");
+        System.out.println("Enter the Elements of the Matrix: ");
         for (i = 0; i < m; i++) {
             for (j = 0; j < m; j++) {
                 ar[i][j] = sc.nextInt();
@@ -21,7 +22,7 @@ public class Boundary_Sort {
             }
         }
 
-        System.out.println("The Matrix is");
+        System.out.println("The Original Matrix is:");
         for (i = 0; i < m; i++) {
             for (j = 0; j < m; j++)
                 System.out.print(ar[i][j] + "\t");
@@ -44,18 +45,19 @@ public class Boundary_Sort {
 
         for (i = 1; i < m - 1; i++, pos++)
             ar[i][m - 1] = t[pos];
+
         for (i = m - 1; i >= 0; i--, pos++)
             ar[m - 1][i] = t[pos];
 
         for (i = m - 2; i > 0; i--, pos++)
             ar[i][0] = t[pos];
 
-        System.out.println("The Matrix after sorting boundary elements is");
+        System.out.println("The Matrix after sorting boundary elements is:");
         for (i = 0; i < m; i++) {
             for (j = 0; j < m; j++)
                 System.out.print(ar[i][j] + "\t");
             System.out.println();
         }
-        System.out.println("The sum of boundary elements: " + sum);
+        System.out.println("The sum of boundary elements = " + sum);
     }
 }

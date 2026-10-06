@@ -1,7 +1,8 @@
 import java.util.*;
 
-public class IDtoIID {
+public class ID_To_IID {
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the value of n");
         int n = sc.nextInt();
@@ -24,7 +25,7 @@ public class IDtoIID {
                 k++;
             }
         }
-        System.out.println("The conversion from ID to IID Array is---->");
+        System.out.println("The conversion from 1D to 2D Array is---->");
         for (i = 0; i < p; i++) {
             for (j = 0; j < p; j++)
                 System.out.print(b[i][j] + "\t");
